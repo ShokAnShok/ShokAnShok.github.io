@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Smaki Świata</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/jpeg" href="img/favicon.jpg">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="top-header">
+                <div class="logo-container">
+                    <img src="img/favicon.png" alt="Logo restauracji" class="logo" />
+                    <h1>Restauracja "Smaki Świata"</h1>
+                </div>
+            </div>
+                <nav>
+                <ul class="menu">
+                    <li class="dropdown">
+                        <a href="index.html">Strona Główna <span class="arrow">&#x25BC;</span></a>
+                        <ul class="submenu">
+                            <li><a href="aktualnosci.html">Aktualności</a></li>
+                        </ul>
+                        <li><a href="menu.html">Menu</a></li>
+
+                        <li class="dropdown">
+                            <a>Galeria <span class="arrow">&#x25BC;</span></a>
+                            <ul class="submenu">
+                                <li><a href="jedzenie.html">Jedzenie</a></li>
+                                <li><a href="restauracja.html">Restauracja</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a>Kontakt <span class="arrow">&#x25BC;</span></a>
+                            <ul class="submenu">
+                                <li><a href="rezerwacje.html">Rezerwacje</a></li>
+                                <li><a href="kontakt.html">Informacje</a></li>
+                            </ul>
+                        </li>
+                        
+                </ul>
+                <div class="header-right">
+                    <span id="zegar" class="zegar"></span>
+                    <button id="przelacz-motyw">🌙 / ☀️</button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="centered">
+                <h2 id="menu">Nasze Menu</h2>
+                <p id="tip">Kliknij na potrawę aby ją zobaczyć!</p>
+                <div class="menumain">
+            <div class="menudiv" onclick="otworzMenu(this)">
+                <p>Przystawki</p>
+                <p class="strzala">&#x25BC;</p>
+            </div>
+            <div class="menuopen">
+                <div class="menuopenimg">
+                <img id="menuimg1" src="img/bruschetta.jpg" alt="przystawki">
+                </div>
+                <ul id="ul1">
+                    <li class="potrawa" onclick="pokazObrazek1('img/bruschetta.jpg')">Bruschetta z pomidorami – 12 zł</li>
+                    <li class="potrawa" onclick="pokazObrazek1('img/tatar.jpg')">Tatar wołowy – 27 zł</li>
+                    <li class="potrawa" onclick="pokazObrazek1('img/paluchy.jpg')">Paluchy oliwne – 14 zł</li>
+                    <li class="potrawa" onclick="pokazObrazek1('img/smalec.jpg')">Chleb ze smalcem i ogórkami – 9 zł</li>
+                </ul>
+            </div>
+            </div>
+            <div class="menumain">
+            <div class="menudiv" onclick="otworzMenu(this)">
+                <p>Zupy</p>
+                <p class="strzala">&#x25BC;</p>
+            </div>
+            <div class="menuopen">
+                <div class="menuopenimg">
+                <img id="menuimg2" src="img/rosol.jpg" alt="zupy">
+                </div>
+                <ul id="ul2">
+                <li class="potrawa" onclick="pokazObrazek2('img/rosol.jpg')">Rosół – 9 zł</li>
+                <li class="potrawa" onclick="pokazObrazek2('img/krem-dynia.jpg')">Krem z dyni – 14 zł</li>
+                <li class="potrawa" onclick="pokazObrazek2('img/zurek.jpg')">Żurek w chlebie - 17 zł</li>
+                <li class="potrawa" onclick="pokazObrazek2('img/zupa-tajska.jpg')">Zupa tajska – 16 zł</li>
+                <li class="potrawa" onclick="pokazObrazek2('img/zupa-serowa.jpg')">Zupa serowa – 15 zł</li>
+                <li class="potrawa" onclick="pokazObrazek2('img/ramen.jpg')">Ramen wołowy – 21 zł</li>
+                <li class="potrawa" onclick="pokazObrazek2('img/miso.jpg')">Zupa miso – 19 zł</li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="menumain">
+            <div class="menudiv" onclick="otworzMenu(this)">
+                <p>Dania główne</p>
+                <p class="strzala">&#x25BC;</p>
+            </div>
+            <div class="menuopen">
+                <div class="menuopenimg">
+                <img id="menuimg3" src="img/schabowy.jpg" alt="daniaglowne">
+                </div>
+                <ul id="ul3">
+                <li class="potrawa" onclick="pokazObrazek3('img/schabowy.jpg')">Schabowy z frytkami – 37 zł</li>
+                <li class="potrawa" onclick="pokazObrazek3('img/carbonara.jpg')">Makaron carbonara – 28 zł</li>
+                <li class="potrawa" onclick="pokazObrazek3('img/pizza-parma.jpg')">Pizza parma 33cm – 43 zł</li>
+                <li class="potrawa" onclick="pokazObrazek3('img/pad-thai.jpg')">Pad Thai wołowy – 36 zł</li>
+                <li class="potrawa" onclick="pokazObrazek3('img/beef-wellington.jpg')">Beef Wellington – 56 zł</li>
+                <li class="potrawa" onclick="pokazObrazek3('img/losos.jpg')">Łosoś w sosie bazyliowym z łódeczkami – 41 zł</li>
+                <li class="potrawa" onclick="pokazObrazek3('img/paella.jpg')">Paella – 40 zł</li>
+                <li class="potrawa" onclick="pokazObrazek3('img/pierogi.jpg')">Pierogi ruskie ze skwarkami - 34 zł</li>
+                </ul>
+            </div>
+            </div>
+            <div class="menumain">
+            <div class="menudiv" onclick="otworzMenu(this)">
+                <p>Desery</p>
+                <p class="strzala">&#x25BC;</p>
+            </div>
+            <div class="menuopen">
+                <div class="menuopenimg">
+                <img id="menuimg4" src="img/sernik.jpg" alt="desery">
+                </div>
+                <ul id="ul4">
+                <li class="potrawa" onclick="pokazObrazek4('img/sernik.jpg')">Sernik – 13 zł</li>
+                <li class="potrawa" onclick="pokazObrazek4('img/puchar-lodowy.jpg')">Puchar lodowy – 19 zł</li>
+                <li class="potrawa" onclick="pokazObrazek4('img/lava-cake.jpg')">Lava Cake – 15 zł</li>
+                <li class="potrawa" onclick="pokazObrazek4('img/tort-pavlova.jpg')">Tort Pavlova – 23 zł</li>
+                <li class="potrawa" onclick="pokazObrazek4('img/Tiramisu.jpg')">Tiramisu – 17 zł</li>
+                <li class="potrawa" onclick="pokazObrazek4('img/ciasto-marchewkowe.jpg')">Ciasto marchewkowe – 14 zł</li>
+                <li class="potrawa" onclick="pokazObrazek4('img/makaroniki.jpg')">Makaroniki – 20 zł</li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="menumain">
+            <div class="menudiv" onclick="otworzMenu(this)">
+                <p>Napoje</p>
+                <p class="strzala">&#x25BC;</p>
+            </div>
+            <div class="menuopen">
+                <div class="menuopenimg">
+                <img id="menuimg5" src="img/kawa.jpg" alt="napoje">
+                </div>
+                <ul id="ul5">
+                <li class="potrawa" onclick="pokazObrazek5('img/kawa.jpg')">Kawa z lodami 300ml – 17 zł</li>
+                <li class="potrawa" onclick="pokazObrazek5('img/lemoniada.jpg')">Lemoniada 400ml – 11 zł</li>
+                <li class="potrawa" onclick="pokazObrazek5('img/mojito.jpg')">Mojito 350ml – 14 zł</li>
+                <li class="potrawa" onclick="pokazObrazek5('img/piwo.jpg')">Piwo bawarskie 500nl – 13 zł</li>
+                <li class="potrawa" onclick="pokazObrazek5('img/woda.jpg')">Woda mineralna 500ml – 6 zł</li>
+                <li class="potrawa" onclick="pokazObrazek5('img/cocacola.jpg')">Coca-Cola 330ml – 7 zł</li>
+                <li class="potrawa" onclick="pokazObrazek5('img/jarritos.jpg')">Jarritos 370ml – 10 zł</li>
+                </ul>
+            </div>
+            </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Restauracja Smaki Świata. Marcin Jeleń, Bartosz Góral - Klasa 3F</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

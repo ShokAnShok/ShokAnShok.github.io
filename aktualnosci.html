@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smaki Świata</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="top-header">
+                <div class="logo-container">
+                    <img src="img/favicon.png" alt="Logo restauracji" class="logo" />
+                    <h1>Restauracja "Smaki Świata"</h1>
+                </div>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li class="dropdown">
+                        <a href="index.html">Strona Główna <span class="arrow">&#x25BC;</span></a>
+                        <ul class="submenu">
+                            <li><a href="aktualnosci.html">Aktualności</a></li>
+                        </ul>
+                        <li><a href="menu.html">Menu</a></li>
+
+                        <li class="dropdown">
+                            <a>Galeria <span class="arrow">&#x25BC;</span></a>
+                            <ul class="submenu">
+                                <li><a href="jedzenie.html">Jedzenie</a></li>
+                                <li><a href="restauracja.html">Restauracja</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a>Kontakt <span class="arrow">&#x25BC;</span></a>
+                            <ul class="submenu">
+                                <li><a href="rezerwacje.html">Rezerwacje</a></li>
+                                <li><a href="kontakt.html">Informacje</a></li>
+                            </ul>
+                        </li>
+                        
+                </ul>
+                <div class="header-right">
+                    <span id="zegar" class="zegar"></span>
+                    <button id="przelacz-motyw">🌙 / ☀️</button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+                <p id="aktualnoscinapis">Aktualności</p>
+            <div id="aktualnoscimain">
+                    <div class="aktualnoscidiv"><div id="aktualnoscidivcontent"><strong>20.05.2025:</strong><br> Nowe dania sezonowe w menu – <br> zapraszamy!</div></div>
+                    <div class="aktualnoscidiv"><div id="aktualnoscidivcontent"><strong>15.06.2025:</strong><br> Wieczór góralski z muzyką na żywo! <br><br><span id="odliczanie-wydarzenia1"></span></div></div>
+                    <div class="aktualnoscidiv"><div id="aktualnoscidivcontent"><strong>02.07.2025:</strong><br> Popołudniowa herbatka z prezydentem miasta! <br><br> <span id="odliczanie-wydarzenia2"></span></div></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Restauracja Smaki Świata. Marcin Jeleń, Bartosz Góral - Klasa 3F</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

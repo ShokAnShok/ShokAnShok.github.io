@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria - Smaki Świata</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/jpeg" href="img/favicon.jpg">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="top-header">
+                <div class="logo-container">
+                    <img src="img/favicon.png" alt="Logo restauracji" class="logo" />
+                    <h1>Restauracja "Smaki Świata"</h1>
+                </div>
+            </div>
+                <nav>
+                <ul class="menu">
+                    <li class="dropdown">
+                        <a href="index.html">Strona Główna <span class="arrow">&#x25BC;</span></a>
+                        <ul class="submenu">
+                            <li><a href="aktualnosci.html">Aktualności</a></li>
+                        </ul>
+                        <li><a href="menu.html">Menu</a></li>
+
+                        <li class="dropdown">
+                            <a>Galeria <span class="arrow">&#x25BC;</span></a>
+                            <ul class="submenu">
+                                <li><a href="jedzenie.html">Jedzenie</a></li>
+                                <li><a href="restauracja.html">Restauracja</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a>Kontakt <span class="arrow">&#x25BC;</span></a>
+                            <ul class="submenu">
+                                <li><a href="rezerwacje.html">Rezerwacje</a></li>
+                                <li><a href="kontakt.html">Informacje</a></li>
+                            </ul>
+                        </li>
+                        
+                </ul>
+                <div class="header-right">
+                    <span id="zegar" class="zegar"></span>
+                    <button id="przelacz-motyw">🌙 / ☀️</button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="jedzeniemain">
+                <h2>Galeria restauracji</h2>
+                <div id="mainsrodek">
+                    <div id="lewy">
+                        <button type="button" id="lbutton2">&lt;</button>
+                    </div>
+                    <div id="srodkowy">
+                        <img src="img/rest1.jpg" alt="Aktywne zdjęcie" id="mainimg2">
+                    </div>
+                    <div id="prawy">
+                        <button type="button" id="pbutton2">&gt;</button>
+                    </div>
+                </div>
+        <div id="miniatury">
+            <img src="img/rest1.jpg" alt="1" class="secimg" onclick="powiekszObraz2('img/rest1.jpg')">
+            <img src="img/rest2.jpg" alt="2" class="secimg" onclick="powiekszObraz2('img/rest2.jpg')">
+            <img src="img/rest3.jpg" alt="3" class="secimg" onclick="powiekszObraz2('img/rest3.jpg')">
+            <img src="img/rest4.jpg" alt="4" class="secimg" onclick="powiekszObraz2('img/rest4.jpg')">
+            <img src="img/rest5.jpg" alt="5" class="secimg" onclick="powiekszObraz2('img/rest5.jpg')">
+            <img src="img/rest6.jpg" alt="6" class="secimg" onclick="powiekszObraz2('img/rest6.jpg')">
+            <img src="img/rest7.jpg" alt="7" class="secimg" onclick="powiekszObraz2('img/rest7.jpg')">
+            <img src="img/rest8.jpg" alt="8" class="secimg" onclick="powiekszObraz2('img/rest8.jpg')">
+            <img src="img/rest9.jpg" alt="9" class="secimg" onclick="powiekszObraz2('img/rest9.jpg')">
+            <img src="img/rest10.jpg" alt="10" class="secimg" onclick="powiekszObraz2('img/rest10.jpg')">
+            <img src="img/rest11.jpg" alt="11" class="secimg" onclick="powiekszObraz2('img/rest11.jpg')">
+            <img src="img/rest12.jpg" alt="12" class="secimg" onclick="powiekszObraz2('img/rest12.jpg')">
+        </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Restauracja Smaki Świata. Marcin Jeleń, Bartosz Góral - Klasa 3F</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

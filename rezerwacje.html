@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezerwacje - Smaki Świata</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/jpeg" href="img/favicon.jpg">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="top-header">
+                <div class="logo-container">
+                    <img src="img/favicon.png" alt="Logo restauracji" class="logo" />
+                    <h1>Restauracja "Smaki Świata"</h1>
+                </div>
+            </div>
+                <nav>
+                <ul class="menu">
+                    <li class="dropdown">
+                        <a href="index.html">Strona Główna <span class="arrow">&#x25BC;</span></a>
+                        <ul class="submenu">
+                            <li><a href="aktualnosci.html">Aktualności</a></li>
+                        </ul>
+                        <li><a href="menu.html">Menu</a></li>
+
+                        <li class="dropdown">
+                            <a>Galeria <span class="arrow">&#x25BC;</span></a>
+                            <ul class="submenu">
+                                <li><a href="jedzenie.html">Jedzenie</a></li>
+                                <li><a href="restauracja.html">Restauracja</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a>Kontakt <span class="arrow">&#x25BC;</span></a>
+                            <ul class="submenu">
+                                <li><a href="rezerwacje.html">Rezerwacje</a></li>
+                                <li><a href="kontakt.html">Informacje</a></li>
+                            </ul>
+                        </li>
+                        
+                </ul>
+                <div class="header-right">
+                    <span id="zegar" class="zegar"></span>
+                    <button id="przelacz-motyw">🌙 / ☀️</button>
+                </div>
+            </nav>
+        </header>
+
+        <main id="mainrezerwacje">
+            <section class="centered" id="formularz">
+                <h2>Formularz rezerwacji</h2>
+                <form id="rezerwacja-form">
+                    <input type="text" name="imie" placeholder="Imię" id="imie" minlength="2" required/>
+                    <input type="text" name="nazwisko" placeholder="Nazwisko" id="nazwisko" required />
+                    <input type="email" name="email" placeholder="Email" id="email" required />
+                    <input type="tel" name="telefon" placeholder="Telefon" id="telefon" maxlength="9" required />
+                    <label id="labeldata">Data:
+            <input type="date" name="data" id="data" required />
+          </label>
+                    <label>Godzina:
+            <select name="godzina" required>
+              <option value="12:00">10:00</option>
+              <option value="13:00">11:00</option>
+              <option value="14:00">12:00</option>
+              <option value="18:00">13:00</option>
+              <option value="18:00">14:00</option>
+              <option value="18:00">15:00</option>
+              <option value="18:00">16:00</option>
+              <option value="18:00">17:00</option>
+              <option value="18:00">18:00</option>
+              <option value="18:00">19:00</option>
+              <option value="18:00">20:00</option>
+              <option value="18:00">21:00</option>
+            </select>
+          </label>
+                    <button type="submit" onclick="sprawdzFormularz()">Zarezerwuj</button>
+                </form>
+                <div id="blad-formularza" class="blad"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Restauracja Smaki Świata. Marcin Jeleń, Bartosz Góral - Klasa 3F</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
